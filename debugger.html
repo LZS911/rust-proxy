@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugger</title>
+  </head>
+  <body>
+    <button onclick="calc()">Calc</button>
+
+    <div>calc 20 * 4 + (3 - 4 / 2)</div>
+
+    <div id="result"></div>
+  </body>
+  <script>
+    function calc() {
+      let a = 20;
+      let b = 4;
+      let c = 3;
+      let d = 4;
+      let e = 2;
+      const res = a * b + (c - d / e);
+      const resultDiv = document.getElementById("result");
+      if (resultDiv) {
+        resultDiv.innerText = `result is ${res}`;
+      }
+    }
+  </script>
+</html>
